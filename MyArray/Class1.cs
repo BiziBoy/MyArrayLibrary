@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyArrayLibrary
 {
   public static class MyArray
   {
-    static double sumOfEvenElements(ref double[] array)
+    public static double sumOfEvenElements(ref double[] array)
     {
       double SumOfEvenElements = 0;
       for (int i = 0; i < array.Length; i++)
@@ -21,7 +17,7 @@ namespace MyArrayLibrary
       return SumOfEvenElements;
     }
 
-    static int findTheFirstIndexByValue(ref double[] array, double value)
+    public static int findTheFirstIndexByValue(ref double[] array, double value)
     {
       int index = -1;
       for (int i = 0; i < array.Length; i++)
@@ -36,7 +32,7 @@ namespace MyArrayLibrary
       return index;
     }
 
-    static void Resize(ref int[] array, char sign, int count)
+    public static void Resize(ref int[] array, char sign, int count)
     {
       int[] currArray = new int[array.Length];
       for (int i = 0; i < array.Length; i++)
@@ -61,8 +57,8 @@ namespace MyArrayLibrary
 
       }
     }
-    
-    static void addToEnd(ref int[] array)
+
+    public static void addToEnd(ref int[] array)
     {
       int[] currArray = new int[array.Length];
       for (int i = 0; i < array.Length; i++)
@@ -79,7 +75,7 @@ namespace MyArrayLibrary
 
     }
 
-    static void addToStart(ref int[] array)
+    public static void addToStart(ref int[] array)
     {
       int[] currArray = new int[array.Length];
       for (int i = 0; i < array.Length; i++)
